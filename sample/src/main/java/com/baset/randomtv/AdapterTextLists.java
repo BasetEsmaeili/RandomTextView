@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class AdapterTextLists extends RecyclerView.Adapter<ViewHolderTextLists> {
     private ArrayList<String> textList;
 
-    public AdapterTextLists(ArrayList<String> textList) {
+    AdapterTextLists(ArrayList<String> textList) {
         this.textList = textList;
     }
 

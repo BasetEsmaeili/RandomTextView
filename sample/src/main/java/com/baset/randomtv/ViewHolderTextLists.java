@@ -7,15 +7,15 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class ViewHolderTextLists extends RecyclerView.ViewHolder {
+class ViewHolderTextLists extends RecyclerView.ViewHolder {
     private TextView textView;
 
-    public ViewHolderTextLists(@NonNull View itemView) {
+    ViewHolderTextLists(@NonNull View itemView) {
         super(itemView);
         textView = itemView.findViewById(R.id.textView1);
     }
 
-    public void bindData(ArrayList<String> textList) {
+    void bindData(ArrayList<String> textList) {
         textView.setText(textList.get(getAdapterPosition()));
     }
 }

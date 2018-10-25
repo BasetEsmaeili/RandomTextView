@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private RandomTextView randomTextView;
@@ -18,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setupArrayList();
-        setupVIews();
+        setupViews();
         setupRandomTextView();
         setupRecyclerView();
     }
@@ -29,31 +30,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void setupArrayList() {
-        textList.add("JAVA");
-        textList.add("PHP");
-        textList.add("JavaScript");
-        textList.add("Python");
-        textList.add("Objective-C");
-        textList.add("Ruby");
-        textList.add("Perl");
-        textList.add("C, C++ and C#");
-        textList.add("SQL");
-        textList.add("Swift");
+        textList.addAll(Arrays.asList("JAVA", "PHP", "JavaScript", "Python", "Objective-C", "Ruby",
+                "Perl", "C, C++ and C#", "SQL", "Swift"));
     }
 
     private void setupRandomTextView() {
         randomTextView.setTextList(textList);
     }
 
-    private void setupVIews() {
+    private void setupViews() {
         randomTextView = findViewById(R.id.randomtv);
         rvTextList = findViewById(R.id.textLists);
     }
 
     @Override
     public void onClick(View v) {
-        int id = v.getId();
-        switch (id) {
+        switch (v.getId()) {
             case R.id.select_btn:
                 setupRandomTextView();
                 break;
