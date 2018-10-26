@@ -1,6 +1,9 @@
 # RandomTextView
 [![](https://jitpack.io/v/BasetEsmaeili/RandomTextView.svg)](https://jitpack.io/#BasetEsmaeili/RandomTextView)
-[[Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-RandomTextView-green.svg?style=flat)]( https://android-arsenal.com/details/1/7262)
+
+[![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-RandomTextView-green.svg?style=flat )]( https://android-arsenal.com/details/1/7262 )
+
+
 
 a Android library for pickup random text from list and show in textview
 
